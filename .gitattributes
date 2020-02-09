@@ -1,0 +1,7 @@
+# Ensure consistent Unix-style line endings except for Windows batch files.
+# This is to prevent inconsistent line endings resulting in unintentional git changes:
+# https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files
+
+* text=auto eol=lf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
